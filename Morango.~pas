@@ -4,14 +4,13 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, pngimage, ExtCtrls, StdCtrls, ShellAPI, Buttons, jpeg, MPlayer;
+  Dialogs, pngimage, ExtCtrls, StdCtrls, ShellAPI, Buttons, jpeg;
 
 type
   TForm1 = class(TForm)
     Panel1: TPanel;
     Button1: TButton;
     Morango: TBitBtn;
-    MediaPlayer1: TMediaPlayer;
     procedure MorangoMouseUp(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure MorangoMouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -73,19 +72,14 @@ procedure TForm1.FormCreate(Sender: TObject);
 var
   fundo:TImage;
   CaminhoImg:String;
-  CaminhoMp3: string;
 begin
   fundo:= TImage.Create(Panel1);
   fundo.Parent:= Panel1;
+  CaminhoImg:= GetCurrentDir + '\fundo.bmp';
+  fundo.Picture.LoadFromFile(CaminhoImg);
   fundo.Visible:=True;
   fundo.Align:= alClient;
   Button1.Font.Color:= clRed;
-
-  CaminhoImg:= GetCurrentDir + '\fundo.bmp';
-  fundo.Picture.LoadFromFile(CaminhoImg);
-
-  CaminhMp3:= GetCurrentDir + '
-  MediaPlayer1.FileName := Ca
 end;
 
 end.

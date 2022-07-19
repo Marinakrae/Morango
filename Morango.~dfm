@@ -840,13 +840,5 @@ object Form1: TForm1
         E7E7E7FAFAFAF9F9F9E7E7E7F6F6F6FDFDFDE9E9E9F0F0F0FFFFFFEDEDEDEBEB
         EBFEFEFEF4F4F4000000}
     end
-    object MediaPlayer1: TMediaPlayer
-      Left = 256
-      Top = 40
-      Width = 253
-      Height = 30
-      Visible = False
-      TabOrder = 2
-    end
   end
 end
