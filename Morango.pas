@@ -84,8 +84,12 @@ begin
   CaminhoImg:= GetCurrentDir + '\fundo.bmp';
   fundo.Picture.LoadFromFile(CaminhoImg);
 
-  CaminhMp3:= GetCurrentDir + '
-  MediaPlayer1.FileName := Ca
+  MediaPlayer1 := TMediaPlayer.Create(Self);
+  MediaPlayer1.Parent := Self;
+  CaminhoMp3:= GetCurrentDir + '\musica.wav';
+  MediaPlayer1.FileName := CaminhoMp3;
+  MediaPlayer1.Open;
+  MediaPlayer1.Play;
 end;
 
 end.

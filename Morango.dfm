@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 235
   Width = 900
   Height = 900
-  Caption = 'Form1'
+  Caption = 'Strawberry Fields'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -845,6 +845,7 @@ object Form1: TForm1
       Top = 40
       Width = 253
       Height = 30
+      FileName = 'C:\Users\marina.eskelsen\Desktop\delphi\Morango\musica.mp3'
       Visible = False
       TabOrder = 2
     end
