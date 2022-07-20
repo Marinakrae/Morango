@@ -1,3 +1,3 @@
 # Morango
 
-Aplicação simples experimental, tente executar o .exe 🍓
+Aplicação simples experimental, faça o download da pasta e tente executar o .exe 🍓
